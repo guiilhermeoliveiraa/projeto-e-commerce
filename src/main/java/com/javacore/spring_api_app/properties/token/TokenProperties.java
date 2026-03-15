@@ -1,4 +1,4 @@
-package com.javacore.spring_api_app.properties;
+package com.javacore.spring_api_app.properties.token;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

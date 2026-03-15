@@ -1,6 +1,6 @@
 package com.javacore.spring_api_app.config;
 
-import com.javacore.spring_api_app.properties.TokenProperties;
+import com.javacore.spring_api_app.properties.token.TokenProperties;
 import com.nimbusds.jose.jwk.JWKSet;
 import com.nimbusds.jose.jwk.RSAKey;
 import com.nimbusds.jose.jwk.source.ImmutableJWKSet;
