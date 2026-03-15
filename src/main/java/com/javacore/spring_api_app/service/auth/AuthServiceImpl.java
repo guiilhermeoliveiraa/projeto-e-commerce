@@ -8,7 +8,7 @@ import com.javacore.spring_api_app.dto.response.LoginUserResponse;
 import com.javacore.spring_api_app.dto.response.RegisterUserResponse;
 import com.javacore.spring_api_app.entity.user.User;
 import com.javacore.spring_api_app.exception.custom.BusinessException;
-import com.javacore.spring_api_app.repository.UserRepository;
+import com.javacore.spring_api_app.repository.user.UserRepository;
 import com.javacore.spring_api_app.service.token.TokenService;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
