@@ -9,7 +9,7 @@ public record RegisterUserResponse(
         UUID publicId,
         String firstName,
         String lastName,
-        String password,
+        String email,
 
         @JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss", timezone = "America/Sao_Paulo")
         Instant createdAt,

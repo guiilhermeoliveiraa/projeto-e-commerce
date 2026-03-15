@@ -62,12 +62,14 @@ public class AuthServiceImpl implements AuthService{
 
     @Override
     public LoginUserResponse login(LoginUserRequest request) {
+        String normalizedEmail = EmailNormalizer.normalize(request.email());
+
         try {
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
-                    request.email(),
+                    normalizedEmail,
                     request.password()
             ));
-        } catch (Exception e) {
+        } catch (BusinessException e) {
             throw new BusinessException("Email ou senha incorreto");
         }
 
@@ -82,7 +84,7 @@ public class AuthServiceImpl implements AuthService{
                 user.getPublicId(),
                 user.getFirstName(),
                 user.getLastName(),
-                user.getPassword(),
+                user.getEmail(),
                 user.getCreatedAt(),
                 user.getUpdatedAt(),
                 user.getDeleted()
