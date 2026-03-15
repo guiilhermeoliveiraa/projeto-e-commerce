@@ -2,8 +2,8 @@ package com.javacore.spring_api_app.service.auth;
 
 import com.javacore.spring_api_app.domain.EmailNormalizer;
 import com.javacore.spring_api_app.domain.NameNormalizer;
-import com.javacore.spring_api_app.dto.request.LoginUserRequest;
-import com.javacore.spring_api_app.dto.request.RegisterUserRequest;
+import com.javacore.spring_api_app.dto.request.user.LoginUserRequest;
+import com.javacore.spring_api_app.dto.request.user.RegisterUserRequest;
 import com.javacore.spring_api_app.dto.response.LoginUserResponse;
 import com.javacore.spring_api_app.dto.response.RegisterUserResponse;
 import com.javacore.spring_api_app.entity.user.User;
