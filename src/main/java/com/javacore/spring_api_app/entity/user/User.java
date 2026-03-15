@@ -1,4 +1,4 @@
-package com.javacore.spring_api_app.entity;
+package com.javacore.spring_api_app.entity.user;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -47,6 +47,16 @@ public class User implements UserDetails {
     @LastModifiedDate
     @Column(name = "updated_at")
     private Instant updatedAt;
+
+    @Builder.Default
+    @Column(name = "email_verified")
+    private Boolean emailVerified = false;
+
+    @Column(name = "last_verification_email_sent_at")
+    private Instant lastVerificationEmailSentAt;
+
+    @Column(name = "verification_email_request_count")
+    private Integer verificationEmailRequestCount;
 
     @Builder.Default
     private Boolean deleted = false;
